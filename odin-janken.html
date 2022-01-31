@@ -3,9 +3,22 @@
  <head>
   <meta charset="utf-8"></meta>
   <title>Rock, Paper, Scissors</title>
-  <script src="./odin-janken.js" type="text/javascript"></script>
+  <script src="./odin-janken.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="./style.css">
  </head>
  <body>
-  
+  <div id="selections">
+   <button id="Rock">Rock</button>
+   <button id="Paper">Paper</button>
+   <button id="Scissors">Scissors</button>
+  </div>
+  <div style="display: flex; justify-content: space-between; padding: 20px;">
+   <div id = "results">
+    <h3>Results</h3>
+   </div>
+   <div id = "scoreboard" style="text-align: center;">
+    <h3>Scoreboard</h3>
+   </div>
+  </div>
  </body>
 </html>

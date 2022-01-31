@@ -47,7 +47,7 @@ function playRound (playerPlay, computerPlay) {
   else {
    return 'Please enter "rock", "paper" or "scissors".'
   }
- }
+}
 
 function game () {
  let wins = 0;
@@ -81,3 +81,16 @@ function game () {
   console.log(`Rounds won: ${wins}. Rounds lost:${losses}. It is a tie.`)
  }
 }
+
+const results = document.querySelector('#results');
+
+const btns = document.querySelectorAll('button');
+btns.forEach((btn) => {
+  btn.addEventListener('click', function(e){
+    const para = document.createElement('p');
+    para.classList.add('content');
+    para.textContent = playRound(e.target.id, computerPlay());
+    
+    results.appendChild(para);
+  });
+});
