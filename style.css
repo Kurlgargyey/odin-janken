@@ -1,0 +1,26 @@
+h3 {
+ padding: 0;
+ margin: 1 0;
+}
+
+p{
+ padding: 0;
+ margin: 1 0;
+}
+
+body {
+ padding: 30px;
+}
+
+#output {
+ display: flex;
+ justify-content: space-between;
+}
+
+#results {
+ min-width:300px;
+}
+
+#scoreboard {
+ min-width: 200px;
+}
